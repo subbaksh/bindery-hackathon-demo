@@ -45,7 +45,6 @@ npm run preview
 - `index.html`, `styles.css`, and `presentation.js` contain the presentation.
 - `assets/` and `client-sprawl.png` contain presentation artwork.
 - `1.mov` through `4.mov` are the recorded demo chapters.
-- `docs/hackathon-roadmap.md` preserves the roadmap used to build the submission.
 - `archive/catalog-seeder/` preserves the one-off demo catalog generator and its test.
 - `.github/workflows/pages.yml` publishes the built site to GitHub Pages.
 
