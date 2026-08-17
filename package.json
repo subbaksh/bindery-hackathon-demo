@@ -1,0 +1,15 @@
+{
+  "name": "bindery-hackathon-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bindery hackathon presentation and recorded demo.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "6.4.3"
+  }
+}
