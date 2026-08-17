@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8fbfc" />
+    <title>Bindery — Hackathon presentation</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="deck" id="deck" aria-label="Bindery hackathon presentation">
+      <section class="slide slide--hero is-active" data-slide="1" aria-labelledby="slide-1-title">
+        <div class="slide__texture" aria-hidden="true"></div>
+        <div class="hero-lockup">
+          <h1 class="sr-only" id="slide-1-title">Bindery</h1>
+          <img
+            class="hero-logo"
+            src="./assets/bindery-logo-full-primary.png"
+            alt="Bindery"
+          />
+          <p class="hero-tagline">A registry and installer for local AI agent capabilities.</p>
+        </div>
+        <div class="hero-rail" aria-hidden="true"></div>
+      </section>
+
+      <section class="slide slide--problem" data-slide="2" aria-labelledby="slide-2-title">
+        <div class="slide-shell slide-shell--problem">
+          <header class="slide-heading">
+            <h2 id="slide-2-title">Problem: Installation differs between AI clients.</h2>
+            <p class="slide-lede">Each client uses different paths, formats and configuration.</p>
+          </header>
+
+          <figure class="sprawl-frame">
+            <img
+              src="./client-sprawl.png"
+              alt="A collage of client-specific installation tabs, paths and configuration instructions"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="slide slide--solution" data-slide="3" aria-labelledby="slide-3-title">
+        <div class="slide-shell slide-shell--solution">
+          <header class="slide-heading slide-heading--compact">
+            <p class="eyebrow">How it works</p>
+            <h2 id="slide-3-title">Bindery stores capabilities and their client installation recipes.</h2>
+          </header>
+
+          <div class="architecture" aria-label="Bindery architecture">
+            <div class="architecture__inputs">
+              <article class="role-card role-card--publisher">
+                <div class="role-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 16V4m0 0L7.5 8.5M12 4l4.5 4.5M5 14v5h14v-5" /></svg>
+                </div>
+                <div>
+                  <p class="role-card__role">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5" /><path d="M5.5 20c.4-4 2.6-6 6.5-6s6.1 2 6.5 6" /></svg>
+                    Publisher
+                  </p>
+                  <h3>Publishes capability content</h3>
+                  <p>Content, metadata and version.</p>
+                </div>
+                <div class="flow-label">publishes</div>
+              </article>
+
+              <article class="role-card role-card--operator">
+                <div class="role-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h2m4 0h10M14 4v6M8 14v6" /></svg>
+                </div>
+                <div>
+                  <p class="role-card__role">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3" /><circle cx="17" cy="9" r="2.4" /><path d="M3.5 20c.3-4 2.1-6 5.5-6s5.2 2 5.5 6M14.5 15c3.4-.5 5.5 1.2 6 4.5" /></svg>
+                    Operator / community
+                  </p>
+                  <h3>Defines client installation recipes</h3>
+                  <p>Installation steps for each client and version.</p>
+                </div>
+                <div class="flow-label">configures</div>
+              </article>
+            </div>
+
+            <article class="bindery-core">
+              <img src="./assets/bindery-icon.png" alt="" aria-hidden="true" />
+              <div class="bindery-core__copy">
+                <p class="bindery-core__name">Bindery</p>
+                <p>Capability registry and installation planner</p>
+              </div>
+              <div class="bindery-core__chips" aria-label="Bindery resources">
+                <span>Capability types</span>
+                <span>Installation recipes</span>
+                <span>Capabilities</span>
+              </div>
+            </article>
+
+            <div class="architecture__output-line" aria-hidden="true">
+              <span>discovers · previews · installs</span>
+            </div>
+
+            <article class="consumer-card">
+              <div class="consumer-card__channels">
+                <div class="consumer-card__terminal" aria-hidden="true">
+                  <span class="terminal-dot terminal-dot--red"></span>
+                  <span class="terminal-dot terminal-dot--yellow"></span>
+                  <span class="terminal-dot terminal-dot--green"></span>
+                  <code><span>$</span> bindery install codeguard</code>
+                </div>
+                <span class="consumer-card__mcp-badge">MCP</span>
+              </div>
+              <div class="consumer-card__copy">
+                <p class="role-card__role">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5" /><path d="M5.5 20c.4-4 2.6-6 6.5-6s6.1 2 6.5 6" /></svg>
+                  Consumer
+                </p>
+                <h3>Previews and applies installation changes</h3>
+              </div>
+              <div class="client-pills" aria-label="Supported clients">
+                <span>Claude Code</span>
+                <span>Codex</span>
+                <span>Cursor</span>
+                <span>+ more</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide slide--video" data-slide="4" aria-label="Demo video 1">
+        <video class="slide-video" src="./1.mov" controls playsinline preload="metadata"></video>
+      </section>
+
+      <section class="slide slide--video" data-slide="5" aria-label="Demo video 2">
+        <video class="slide-video" src="./2.mov" controls playsinline preload="metadata"></video>
+      </section>
+
+      <section class="slide slide--video" data-slide="6" aria-label="Demo video 3">
+        <video class="slide-video" src="./3.mov" controls playsinline preload="metadata"></video>
+      </section>
+
+      <section class="slide slide--video" data-slide="7" aria-label="Demo video 4">
+        <video class="slide-video" src="./4.mov" controls playsinline preload="metadata"></video>
+      </section>
+
+      <section class="slide slide--hero" data-slide="8" aria-labelledby="slide-8-title">
+        <div class="slide__texture" aria-hidden="true"></div>
+        <div class="hero-lockup">
+          <h2 class="sr-only" id="slide-8-title">Bindery</h2>
+          <img
+            class="hero-logo"
+            src="./assets/bindery-logo-full-primary.png"
+            alt="Bindery"
+          />
+          <p class="hero-tagline">A registry and installer for local AI agent capabilities.</p>
+        </div>
+        <div class="hero-rail" aria-hidden="true"></div>
+      </section>
+    </main>
+
+    <div class="slide-count" aria-live="polite"><span id="current-slide">01</span><i></i><span id="total-slides">08</span></div>
+
+    <nav class="deck-nav" aria-label="Slide navigation">
+      <button class="nav-button" id="previous-slide" type="button" aria-label="Previous slide">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6" /></svg>
+      </button>
+      <div class="slide-dots" id="slide-dots" aria-label="Choose slide"></div>
+      <button class="nav-button" id="next-slide" type="button" aria-label="Next slide">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+      </button>
+    </nav>
+
+    <script type="module" src="./presentation.js"></script>
+  </body>
+</html>
